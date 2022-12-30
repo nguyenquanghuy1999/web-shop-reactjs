@@ -1,6 +1,7 @@
 const config = {
     home: '/',
     product: '/:product',
-    cart: '/cart'
+    cart: '/cart',
+    category: '/category/:name'
 }
 export default config;

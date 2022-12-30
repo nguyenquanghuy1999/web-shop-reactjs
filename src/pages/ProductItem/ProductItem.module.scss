@@ -171,15 +171,9 @@
 .policy-bottom {
   margin-top: 20px;
 }
-.policy-bottom-text {
-}
-.policy-bottom-list {
-}
-.policy-bottom-item {
-}
 
 .description {
-  width: 880px;
+  width: 100%;
   margin-top: 30px;
 }
 
@@ -216,9 +210,10 @@
 }
 
 .content-img {
-  width: 100%;
+  width: 70%;
   object-fit: cover;
-  margin-top: 15px;
+  display: flex;
+  margin: 15px auto;
 }
 
 .content-title {

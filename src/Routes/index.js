@@ -1,0 +1,13 @@
+import Home from "../pages/Home";
+import ProductItem from "../pages/ProductItem";
+import Cart from "../pages/Cart";
+import Category from "../pages/Category/Category";
+import config from "../config";
+import LayoutNotSlider from '../layouts/LayoutNotSlider'
+
+export const routes = [
+    { path: config.home, component: Home },
+    { path: config.product, component: ProductItem, layout: LayoutNotSlider },
+    { path: config.cart, component: Cart, layout: LayoutNotSlider },
+    { path: config.category, component: Category, layout: LayoutNotSlider },
+]

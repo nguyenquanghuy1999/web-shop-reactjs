@@ -17,8 +17,30 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  color: #323c42;
 }
 
 a {
+  color: #fff;
   text-decoration: none;
+}
+
+// grid system
+.grid {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.col-3 {
+  width: 25%;
+  padding: 0 10px;
+}
+.col-9 {
+  width: 75%;
+  padding: 0 10px;
 }

@@ -28,8 +28,7 @@
   animation: showModal ease 0.3s;
 
   .close {
-    font-size: 3rem;
-    color: #323c42;
+    font-size: 3.3rem;
     position: absolute;
     top: 15px;
     right: 15px;
@@ -70,7 +69,7 @@
 }
 .pass,
 .pass-confirm {
-  padding-right: 23px;
+  padding-right: 31px;
 }
 
 .icon-eye-open,
@@ -79,7 +78,7 @@
   cursor: pointer;
   position: absolute;
   top: 13px;
-  right: 7px;
+  right: 11px;
 }
 
 .icon-user {

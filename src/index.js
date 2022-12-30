@@ -9,13 +9,13 @@ import ModalProvider from './components/ModalProvider';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-
+  // <React.StrictMode>
   <GlobalStyles>
     <ModalProvider>
       <App />
     </ModalProvider>
   </GlobalStyles>
-
+  // </React.StrictMode>
 
 );
 

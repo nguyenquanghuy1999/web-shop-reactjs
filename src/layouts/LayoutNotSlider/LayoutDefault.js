@@ -6,7 +6,7 @@ import Footer from "../Footer";
 import Header from "../Header";
 import ModalLogin from "../../components/ModalLogin/ModalLogin";
 import { ModalContext } from "../../components/ModalProvider";
-import Slider from "../Slider/Slider";
+
 
 const cx = classNames.bind(style);
 
@@ -17,7 +17,6 @@ function LayoutDefault({ children }) {
     return (
         <div className={cx('wrapper')}>
             <Header />
-            <Slider />
             <div className={cx('content')}>
                 {children}
             </div>
