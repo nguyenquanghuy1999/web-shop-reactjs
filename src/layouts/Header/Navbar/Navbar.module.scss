@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
 }
-.categories {
+.category {
   width: 280px;
   font-size: 1.4rem;
   cursor: pointer;
@@ -37,34 +37,6 @@
   margin-left: 6px;
 }
 
-.category-list {
-  width: 280px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-.category-item {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  transition: all ease 0.1s;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #ffb416;
-  }
-}
-
-.category-img {
-  width: 25x;
-  height: 25px;
-  object-fit: cover;
-}
-.category-name {
-  font-size: 1.4rem;
-  color: #323c42;
-  font-weight: 400;
-  margin-left: 6px;
-}
 
 .nav-list {
   height: 100%;

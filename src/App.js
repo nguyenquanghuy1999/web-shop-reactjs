@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LayoutDefault from './layouts/LayoutDefault/LayoutDefault';
-import { routes } from './Routes'
+import { routes } from './routes'
 
 function App() {
   return (
@@ -9,8 +9,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           {routes.map((route, index) => {
-            let Layout = LayoutDefault;
 
+            let Layout = LayoutDefault;
+            
             if (route.layout) {
               Layout = route.layout;
             } else if (route.layout === null) {

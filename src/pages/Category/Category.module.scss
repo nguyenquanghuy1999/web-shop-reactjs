@@ -44,6 +44,9 @@
   }
 
   &:hover {
+
+    border: 1px solid var(--primary-color);
+
     .add-to-cart {
       color: #fff;
       background-color: var(--primary-color);
@@ -68,6 +71,7 @@
 
 .product-name {
   font-size: 1.4rem;
+  color: var(--text-color);
   font-weight: 600;
   display: block;
   margin-bottom: 10px;

@@ -7,7 +7,7 @@ import LayoutNotSlider from '../layouts/LayoutNotSlider'
 
 export const routes = [
     { path: config.home, component: Home },
-    { path: config.product, component: ProductItem, layout: LayoutNotSlider },
+    { path: config.productItem, component: ProductItem, layout: LayoutNotSlider },
     { path: config.cart, component: Cart, layout: LayoutNotSlider },
     { path: config.category, component: Category, layout: LayoutNotSlider },
 ]

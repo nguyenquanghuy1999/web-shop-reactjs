@@ -13,7 +13,7 @@
 .img {
   width: 355px;
   height: 355px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .infos {
@@ -210,7 +210,7 @@
 }
 
 .content-img {
-  width: 70%;
+  width: 60%;
   object-fit: cover;
   display: flex;
   margin: 15px auto;

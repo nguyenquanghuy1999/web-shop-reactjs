@@ -1,0 +1,33 @@
+.wrapper {
+}
+
+.category {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.category-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  cursor: pointer;
+
+  img {
+    width: 80px;
+    height: 80px;
+    transition: all ease 0.3s;
+
+    &:hover {
+      transform: rotate(40deg);
+    }
+  }
+}
+
+.category-title {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 6px;
+}

@@ -10,7 +10,7 @@ const cx = classNames.bind(style);
 
 function Cart() {
 
-    const isCartList = true;
+    const isCartList = false;
 
     return (
         <Tippy
@@ -22,61 +22,6 @@ function Cart() {
                     {isCartList ?
                         <>
                             <div className={cx('cart-list')}>
-                                <div className={cx('cart-item')}>
-                                    <img className={cx('img')} src="https://vmart.exdomain.net/image/cache/catalog/vmart/san_pham/OPPO-Reno-5-80x80.png" />
-                                    <div className={cx('infos')}>
-                                        <span className={cx('name')}>Điện thoại OPPO Reno5 (8GB|128GB)</span>
-                                        <div className={cx('quantity-and-price')}>
-                                            <span className={cx('quantity')}>Số lượng: 1</span>
-                                            <span className={cx('price')}>17.380.000đ</span>
-                                        </div>
-                                        <span className={cx('remove')}>Xóa</span>
-                                    </div>
-                                </div>
-                                <div className={cx('cart-item')}>
-                                    <img className={cx('img')} src="https://vmart.exdomain.net/image/cache/catalog/vmart/san_pham/OPPO-Reno-5-80x80.png" />
-                                    <div className={cx('infos')}>
-                                        <span className={cx('name')}>Điện thoại OPPO Reno5 (8GB|128GB)</span>
-                                        <div className={cx('quantity-and-price')}>
-                                            <span className={cx('quantity')}>Số lượng: 1</span>
-                                            <span className={cx('price')}>17.380.000đ</span>
-                                        </div>
-                                        <span className={cx('remove')}>Xóa</span>
-                                    </div>
-                                </div>
-                                <div className={cx('cart-item')}>
-                                    <img className={cx('img')} src="https://vmart.exdomain.net/image/cache/catalog/vmart/san_pham/OPPO-Reno-5-80x80.png" />
-                                    <div className={cx('infos')}>
-                                        <span className={cx('name')}>Điện thoại OPPO Reno5 (8GB|128GB)</span>
-                                        <div className={cx('quantity-and-price')}>
-                                            <span className={cx('quantity')}>Số lượng: 1</span>
-                                            <span className={cx('price')}>17.380.000đ</span>
-                                        </div>
-                                        <span className={cx('remove')}>Xóa</span>
-                                    </div>
-                                </div>
-                                <div className={cx('cart-item')}>
-                                    <img className={cx('img')} src="https://vmart.exdomain.net/image/cache/catalog/vmart/san_pham/OPPO-Reno-5-80x80.png" />
-                                    <div className={cx('infos')}>
-                                        <span className={cx('name')}>Điện thoại OPPO Reno5 (8GB|128GB)</span>
-                                        <div className={cx('quantity-and-price')}>
-                                            <span className={cx('quantity')}>Số lượng: 1</span>
-                                            <span className={cx('price')}>17.380.000đ</span>
-                                        </div>
-                                        <span className={cx('remove')}>Xóa</span>
-                                    </div>
-                                </div>
-                                <div className={cx('cart-item')}>
-                                    <img className={cx('img')} src="https://vmart.exdomain.net/image/cache/catalog/vmart/san_pham/OPPO-Reno-5-80x80.png" />
-                                    <div className={cx('infos')}>
-                                        <span className={cx('name')}>Điện thoại OPPO Reno5 (8GB|128GB)</span>
-                                        <div className={cx('quantity-and-price')}>
-                                            <span className={cx('quantity')}>Số lượng: 1</span>
-                                            <span className={cx('price')}>17.380.000đ</span>
-                                        </div>
-                                        <span className={cx('remove')}>Xóa</span>
-                                    </div>
-                                </div>
                                 <div className={cx('cart-item')}>
                                     <img className={cx('img')} src="https://vmart.exdomain.net/image/cache/catalog/vmart/san_pham/OPPO-Reno-5-80x80.png" />
                                     <div className={cx('infos')}>

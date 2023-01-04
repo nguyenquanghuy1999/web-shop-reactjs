@@ -21,7 +21,7 @@ function Search() {
                 <div className={cx('search-result')}  {...attrs}>
                     <span className={cx('search-text')}>Kết quả tìm kiếm</span>
                     <div className={cx('search-list')}>
-                        <Link to={`/${'iPhone11128GB(VNA)'}`}>
+                        <Link to={`/${'iPhon1e11128GB(VNA)'}`}>
                             <div className={cx('search-item')}>
                                 <img
                                     className={cx('search-item-img')}
