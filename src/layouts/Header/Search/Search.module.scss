@@ -55,6 +55,7 @@
   height: 100%;
   max-height: 400px;
   overflow-y: auto;
+  overflow-x: hidden;
 
   &::-webkit-scrollbar {
     border-radius: 0;
@@ -74,7 +75,7 @@
 .search-item {
   display: flex;
   align-items: center;
-  padding: 6px;
+  padding: 10px 6px;
   border-bottom: 1px solid #ccc;
 
   &:hover {
@@ -85,11 +86,12 @@
 .search-item-img {
   width: 42px;
   height: 42px;
+  margin-left: 3px;
   object-fit: cover;
 }
 .search-item-infos {
   flex: 1;
-  margin-left: 6px;
+  margin-left: 10px;
 }
 .search-item-name {
   width: 270px;
@@ -114,6 +116,11 @@
   background: none;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
 }
 
 // ---- end ---- //

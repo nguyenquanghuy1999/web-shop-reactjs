@@ -1,67 +1,70 @@
 import Tippy from '@tippyjs/react/headless';
 import { HiMagnifyingGlass } from 'react-icons/hi2'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 
+import allProduct from '../../../data/products';
 import style from './Search.module.scss';
+import { useDebounce } from '../../../hooks';
 
 const cx = classNames.bind(style);
 
 function Search() {
-    const [isInputFocus, setIsInputFocus] = useState(false);
+
+    const [inputValue, setInputValue] = useState('');
+    const [data, setData] = useState([]);
+    const [showSearchResult, setShowSearchResult] = useState(true);
+
+    const debounceValue = useDebounce(inputValue.trim(), 500);
+
+    // handle filter products 
+    useEffect(() => {
+        const result = allProduct.filter(item => {
+            if (inputValue.length >= 2) {
+                const inputValueLowerCase = item.name.toLowerCase().includes(debounceValue);
+                const inputValueUpperCase = item.name.toUpperCase().includes(debounceValue);
+                return inputValueLowerCase || inputValueUpperCase;
+            }
+        })
+        setData(result);
+    }, [debounceValue])
 
     return (
         <Tippy
             placement='bottom'
             interactive
-            visible={isInputFocus}
-            onClickOutside={() => setIsInputFocus(false)}
+            visible={data.length > 0 && showSearchResult}
+            onClickOutside={() => setShowSearchResult(false)}
             render={(attrs) => (
                 <div className={cx('search-result')}  {...attrs}>
-                    <span className={cx('search-text')}>Kết quả tìm kiếm</span>
+                    <span className={cx('search-text')}>Kết quả tìm kiếm: {data.length} sản phẩm</span>
                     <div className={cx('search-list')}>
-                        <Link to={`/${'iPhon1e11128GB(VNA)'}`}>
-                            <div className={cx('search-item')}>
-                                <img
-                                    className={cx('search-item-img')}
-                                    src="https://vmart.exdomain.net/image/cache/catalog/evo/iphone-11-128gb-green-600x600-6ed960c7-33c2-4c94-894a-ec5970a80cc4-228x228.jpg"
-                                />
-                                <div className={cx('search-item-infos')}>
-                                    <span className={cx('search-item-name')}> iPhone 11 128GB Chính hãng (VN/A) </span>
-                                    <span className={cx('search-item-price')}>20.990.000đ</span>
+                        {data.map((item, index) => (
+                            <Link to={`/${item.name}`} key={index} state={item} >
+                                <div className={cx('search-item')} onClick={() => {
+                                    setInputValue('');
+                                    setShowSearchResult(false);
+                                }}>
+                                    <img className={cx('search-item-img')} src={item.img} />
+                                    <div className={cx('search-item-infos')}>
+                                        <span className={cx('search-item-name')}>{item.name}</span>
+                                        <span className={cx('search-item-price')}>{item.price}</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </Link>
-                        <div className={cx('search-item')}>
-                            <img
-                                className={cx('search-item-img')}
-                                src="https://vmart.exdomain.net/image/cache/catalog/evo/iphone-11-128gb-green-600x600-6ed960c7-33c2-4c94-894a-ec5970a80cc4-228x228.jpg"
-                            />
-                            <div className={cx('search-item-infos')}>
-                                <span className={cx('search-item-name')}>
-                                    iPhone 11 128GB Chính hãng (VN/A)</span>
-                                <span className={cx('search-item-price')}>20.990.000đ</span>
-                            </div>
-                        </div>
-                        <div className={cx('search-item')}>
-                            <img
-                                className={cx('search-item-img')}
-                                src="https://vmart.exdomain.net/image/cache/catalog/evo/iphone-11-128gb-green-600x600-6ed960c7-33c2-4c94-894a-ec5970a80cc4-228x228.jpg"
-                            />
-                            <div className={cx('search-item-infos')}>
-                                <span className={cx('search-item-name')}>
-                                    iPhone 11 128GB Chính hãng (VN/A)</span>
-                                <span className={cx('search-item-price')}>20.990.000đ</span>
-                            </div>
-                        </div>
+                            </Link>
+                        ))}
                     </div>
                     <button className={cx('btn-view-all')}>Xem tất cả</button>
                 </div>
-            )}
-        >
+            )}>
             <div className={cx('search')}>
-                <input placeholder='Tìm kiếm' onFocus={() => setIsInputFocus(true)} />
+                <input
+                    value={inputValue}
+                    placeholder='Tìm kiếm'
+                    onChange={e => setInputValue(e.target.value)}
+                    onFocus={() => setShowSearchResult(true)}
+                />
                 <span className={cx('search-icon')}><HiMagnifyingGlass /></span>
             </div>
         </Tippy>

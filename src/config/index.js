@@ -1,6 +1,7 @@
 const config = {
     home: '/',
-    productItem: '/category/:name/:product',
+    productItem: '/:product',
+    categProductItem: '/category/:name/:product',
     cart: '/cart',
     category: '/category/:name'
 }
