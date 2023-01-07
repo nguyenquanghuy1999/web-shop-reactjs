@@ -18,10 +18,10 @@ function Slider() {
     const [isPrev, setIsPrev] = useState(false);
 
     // handle auto play slider
-    // useEffect(() => {
-    //     let timeId = setTimeout(nextSlider, 3000);
-    //     return () => clearTimeout(timeId);
-    // }, [current])
+    useEffect(() => {
+        let timeId = setTimeout(nextSlider, 3000);
+        return () => clearTimeout(timeId);
+    }, [current])
 
     const nextSlider = () => {
         setCurrent(current === slideItems.length - 1 ? 0 : current + 1);

@@ -5,9 +5,7 @@ import Tippy from "@tippyjs/react/headless";
 import { Link } from "react-router-dom";
 
 import style from './Navbar.module.scss';
-
 import config from '../../../config'
-
 import CategoryList from "./CategoryList/CategoryList";
 
 const cx = classNames.bind(style);

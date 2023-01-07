@@ -1,6 +1,5 @@
 import classNames from "classnames/bind";
 import { RxCaretDown } from 'react-icons/rx'
-import { BsCart2 } from 'react-icons/bs'
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -15,6 +14,7 @@ import {
     smartwatchs,
     tablets
 } from "../../data/products";
+import ProductItem from "../../components/ProductItem/ProductItem";
 
 const cx = classNames.bind(style);
 
@@ -22,6 +22,7 @@ function Category() {
 
     const location = useLocation();
     const category = location.state;
+    const pathNameCateg = location.pathname;
 
     const [data, setData] = useState([]);
 
@@ -70,16 +71,9 @@ function Category() {
                         <div className={cx('product-list')}>
                             <div className='row'>
                                 {data.map((item) => (
-                                    <div key={item.id} className='col-3'>
-                                        <Link to={`${location.pathname}/${item.name}`} state={item}>
-                                            <div className={cx('product-item')}>
-                                                <img src={item.img} />
-                                                <div className={cx('product-info')}>
-                                                    <span className={cx('product-name')}>{item.name}</span>
-                                                    <span className={cx('price')}>{item.price}</span>
-                                                </div>
-                                                <div className={cx('add-to-cart')}><BsCart2 /></div>
-                                            </div>
+                                    <div className='col-3' key={item.id}>
+                                        <Link to={`${pathNameCateg}/${item.name}`} state={item}>
+                                            <ProductItem data={item} />
                                         </Link>
                                     </div>
                                 ))}

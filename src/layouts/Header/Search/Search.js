@@ -2,7 +2,7 @@ import Tippy from '@tippyjs/react/headless';
 import { HiMagnifyingGlass } from 'react-icons/hi2'
 import { useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import allProduct from '../../../data/products';
 import style from './Search.module.scss';
@@ -12,13 +12,15 @@ const cx = classNames.bind(style);
 
 function Search() {
 
+    const navigate = useNavigate();
+
     const [inputValue, setInputValue] = useState('');
     const [data, setData] = useState([]);
-    const [showSearchResult, setShowSearchResult] = useState(true);
+    const [showSearchResult, setShowSearchResult] = useState(false);
 
-    const debounceValue = useDebounce(inputValue.trim(), 500);
+    const debounceValue = useDebounce(inputValue.trim(), 300);
 
-    // handle filter products 
+    // handle filter product
     useEffect(() => {
         const result = allProduct.filter(item => {
             if (inputValue.length >= 2) {
@@ -28,7 +30,30 @@ function Search() {
             }
         })
         setData(result);
+        setShowSearchResult(true);
     }, [debounceValue])
+
+    // handle when press enter in input will navigate  to page search
+    useEffect(() => {
+        const handleKey = e => {
+            if (e.key === 'Enter') {
+                if (inputValue) {
+                    navigate({
+                        pathname: '/search',
+                        search: `?q=${inputValue}`
+                    }, { state: { data, key: inputValue } });
+                    handleResetInput();
+                }
+            }
+        }
+        window.addEventListener('keydown', handleKey);
+        return () => window.removeEventListener('keydown', handleKey);
+    }, [data])
+
+    const handleResetInput = () => {
+        setInputValue('');
+        setShowSearchResult(false);
+    };
 
     return (
         <Tippy
@@ -42,10 +67,7 @@ function Search() {
                     <div className={cx('search-list')}>
                         {data.map((item, index) => (
                             <Link to={`/${item.name}`} key={index} state={item} >
-                                <div className={cx('search-item')} onClick={() => {
-                                    setInputValue('');
-                                    setShowSearchResult(false);
-                                }}>
+                                <div className={cx('search-item')} onClick={handleResetInput}>
                                     <img className={cx('search-item-img')} src={item.img} />
                                     <div className={cx('search-item-infos')}>
                                         <span className={cx('search-item-name')}>{item.name}</span>
@@ -55,7 +77,9 @@ function Search() {
                             </Link>
                         ))}
                     </div>
-                    <button className={cx('btn-view-all')}>Xem tất cả</button>
+                    <Link to={`/search?q=${inputValue}`} state={{ data, key: inputValue }} >
+                        <span className={cx('btn-view-all')} onClick={handleResetInput}>Xem tất cả</span>
+                    </Link>
                 </div>
             )}>
             <div className={cx('search')}>
@@ -65,7 +89,13 @@ function Search() {
                     onChange={e => setInputValue(e.target.value)}
                     onFocus={() => setShowSearchResult(true)}
                 />
-                <span className={cx('search-icon')}><HiMagnifyingGlass /></span>
+                {inputValue && data.length > 0 ?
+                    <Link to={`/search?q=${inputValue}`} state={{ data, key: inputValue }} >
+                        <span className={cx('search-icon')} onClick={handleResetInput}><HiMagnifyingGlass /></span>
+                    </Link>
+                    :
+                    <span className={cx('search-icon')}><HiMagnifyingGlass /></span>
+                }
             </div>
         </Tippy>
 

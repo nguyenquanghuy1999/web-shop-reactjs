@@ -1,5 +1,5 @@
 import classNames from "classnames/bind";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import style from './ProductItem.module.scss';
 import { policyTop, policyBottom } from "../../data/policy";
@@ -14,6 +14,9 @@ function ProductItem() {
 
     const location = useLocation();
     const data = location.state;
+
+    // handle when comp mounted doccument always at the top
+    useEffect(() => window.scroll({ top: 0 }), []);
 
     const handleDescMore = () => {
         setIsDescMore(true);
