@@ -11,9 +11,6 @@ function Search() {
     const data = location.state.data;
     const keyword = location.state.key;
     const dataLength = location.state.data.length;
-    console.log(dataLength);
-
-
 
     return (
         <div className={cx('wrapper')}>

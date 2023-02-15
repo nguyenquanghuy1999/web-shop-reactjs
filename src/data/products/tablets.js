@@ -3,7 +3,7 @@ export const tablets = [
         id: 1,
         name: 'Apple iPad Air 10.9 2020 Wi-Fi 64GB Chính Hãng',
         img: require('../../assets/images/Products/Ipad/product1.jpg'),
-        price: '21,500,000đ',
+        price: '21.500.000đ',
         details: {
             desc_heading: 'iPad Air 10.9 2020 là chiếc máy tính bảng cao cấp, đáp ứng hoàn hảo mọi nhu cầu của bạn trong một thiết kế di động, màn hình Liquid Retina đẹp xuất sắc, bộ vi xử lý Apple A14 Bionic siêu mạnh mẽ và thời lượng pin cả ngày.',
             desc_heading_img: require('../../assets/images/desc-product/ipad1.jpg'),
@@ -45,7 +45,7 @@ export const tablets = [
         id: 2,
         name: 'Apple iPad Pro 11 2020 4G 128GB Chính Hãng Apple',
         img: require('../../assets/images/Products/Ipad/product2.jpg'),
-        price: '21,500,000đ',
+        price: '21.500.000đ',
         details: {
             desc_heading: 'iPad Air 10.9 2020 là chiếc máy tính bảng cao cấp, đáp ứng hoàn hảo mọi nhu cầu của bạn trong một thiết kế di động, màn hình Liquid Retina đẹp xuất sắc, bộ vi xử lý Apple A14 Bionic siêu mạnh mẽ và thời lượng pin cả ngày.',
             desc_heading_img: require('../../assets/images/desc-product/ipad1.jpg'),
@@ -87,7 +87,7 @@ export const tablets = [
         id: 3,
         name: 'Apple iPad Pro 11 2020 Wi-Fi 128GB Chính Hãng',
         img: require('../../assets/images/Products/Ipad/product3.jpg'),
-        price: '21,500,000đ',
+        price: '21.500.000đ',
         details: {
             desc_heading: 'iPad Air 10.9 2020 là chiếc máy tính bảng cao cấp, đáp ứng hoàn hảo mọi nhu cầu của bạn trong một thiết kế di động, màn hình Liquid Retina đẹp xuất sắc, bộ vi xử lý Apple A14 Bionic siêu mạnh mẽ và thời lượng pin cả ngày.',
             desc_heading_img: require('../../assets/images/desc-product/ipad1.jpg'),

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import classNames from "classnames/bind";
 import { FaBars } from 'react-icons/fa'
 import { BsFillCaretDownFill } from 'react-icons/bs'
@@ -6,11 +7,14 @@ import { Link } from "react-router-dom";
 
 import style from './Navbar.module.scss';
 import config from '../../../config'
-import CategoryList from "./CategoryList/CategoryList";
+import { category } from '../../../data/category';
 
 const cx = classNames.bind(style);
 
 function Navbar() {
+
+    const [isCateg, setIscateg] = useState(true);
+
     return (
         <div className={cx('wrapper')}>
             <div className={cx('inner')}>
@@ -18,9 +22,20 @@ function Navbar() {
                     interactive
                     placement="bottom"
                     offset={[0, 12]}
-                    render={CategoryList}
+                    render={() => isCateg && (
+                        <ul className={cx('category-list')}>
+                            {category.map((item, index) => (
+                                <Link to={`/category/${item.category}`} key={index} state={item.name}>
+                                    <li className={cx('category-item')} onClick={() => setIscateg(false)}>
+                                        <img className={cx('category-img')} src={item.image} />
+                                        <span className={cx('category-name')}>{item.name}</span>
+                                    </li>
+                                </Link>
+                            ))}
+                        </ul>
+                    )}
                 >
-                    <div className={cx('category')}>
+                    <div className={cx('category')} onMouseMove={() => setIscateg(true)}>
                         <FaBars />
                         <span className={cx('category-text')}>Danh mục sản phẩm</span>
                     </div>

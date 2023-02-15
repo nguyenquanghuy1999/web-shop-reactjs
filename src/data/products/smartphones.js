@@ -3,7 +3,7 @@ export const smartphones = [
         id: 1,
         name: 'Điện thoại OPPO Reno5 (8GB|128GB)',
         img: require('../../assets/images/Products/Smartphone/product1.png'),
-        price: '8,690,000đ',
+        price: '8.690.000đ',
         details: {
             desc_heading: 'Thiết kế đẹp đậm chất OPPO Reno Series. Có thể nói OPPO Reno5 là mẫu điện thoại phô diễn được đỉnh cao thiết kế và công nghệ chế tác của OPPO khi bề mặt lưng được phủ lớp Reno Glow với ngàn tinh thể phát sáng siêu nhỏ tạo nên hiệu ứng chuyển sắc vô cùng hút mắt.',
             desc_heading_img: require('../../assets/images/desc-product/op1.jpg'),
@@ -35,7 +35,7 @@ export const smartphones = [
         id: 2,
         name: 'iPhone 12 Pro Max Chính Hãng ',
         img: require('../../assets/images/Products/Smartphone/product2.jpg'),
-        price: '33,990,000đ',
+        price: '33.990.000đ',
         details: {
             desc_heading: '“Trùm cuối” của dòng iPhone 12 đã xuất hiện. iPhone 12 Pro Max là chiếc iPhone có màn hình lớn nhất từ trước đến nay, mang trên mình bộ vi xử lý mạnh nhất, camera đẳng cấp pro cùng kết nối 5G siêu tốc, cho bạn những trải nghiệm tuyệt vời chưa từng có. ',
             desc_heading_img: require('../../assets/images/desc-product/ip12-1.jpeg'),
@@ -67,7 +67,7 @@ export const smartphones = [
         id: 3,
         name: 'iPhone 12 Pro Max 256GB Chính Hãng ',
         img: require('../../assets/images/Products/Smartphone/product3.jpg'),
-        price: '33,990,000đ',
+        price: '33.990.000đ',
         details: {
             desc_heading: '“Trùm cuối” của dòng iPhone 12 đã xuất hiện. iPhone 12 Pro Max là chiếc iPhone có màn hình lớn nhất từ trước đến nay, mang trên mình bộ vi xử lý mạnh nhất, camera đẳng cấp pro cùng kết nối 5G siêu tốc, cho bạn những trải nghiệm tuyệt vời chưa từng có. ',
             desc_heading_img: require('../../assets/images/desc-product/ip12-1.jpeg'),
@@ -99,7 +99,7 @@ export const smartphones = [
         id: 4,
         name: 'iPhone 12 128GB Chính hãng ',
         img: require('../../assets/images/Products/Smartphone/product4.jpg'),
-        price: '24,990,000đ',
+        price: '24.990.000đ',
         details: {
             desc_heading: '“Trùm cuối” của dòng iPhone 12 đã xuất hiện. iPhone 12 Pro Max là chiếc iPhone có màn hình lớn nhất từ trước đến nay, mang trên mình bộ vi xử lý mạnh nhất, camera đẳng cấp pro cùng kết nối 5G siêu tốc, cho bạn những trải nghiệm tuyệt vời chưa từng có. ',
             desc_heading_img: require('../../assets/images/desc-product/ip12-1.jpeg'),
@@ -131,7 +131,7 @@ export const smartphones = [
         id: 5,
         name: 'iPhone 12 64GB Chính hãng ',
         img: require('../../assets/images/Products/Smartphone/product6.jpg'),
-        price: '24,990,000đ',
+        price: '24.990.000đ',
         details: {
             desc_heading: '“Trùm cuối” của dòng iPhone 12 đã xuất hiện. iPhone 12 là chiếc iPhone có màn hình lớn nhất từ trước đến nay, mang trên mình bộ vi xử lý mạnh nhất, camera đẳng cấp pro cùng kết nối 5G siêu tốc, cho bạn những trải nghiệm tuyệt vời chưa từng có. ',
             desc_heading_img: require('../../assets/images/desc-product/ip12-1.jpeg'),
@@ -163,7 +163,7 @@ export const smartphones = [
         id: 6,
         name: 'Samsung Galaxy S20 Ultra',
         img: require('../../assets/images/Products/Smartphone/product5.jpg'),
-        price: '29,990,000đ',
+        price: '29.990.000đ',
         details: {
             desc_heading: 'Samsung Galaxy S20 Ultra là chiếc điện thoại sẽ thay đổi tương lai của nhiếp ảnh smartphone. Cùng khám phá bước tiến mang tính lịch sử với 5 ống kính camera 108MP siêu nét, quay phim chuẩn điện ảnh 8K trên S20 Ultra. ',
             desc_heading_img: require('../../assets/images/desc-product/ss1.jpg'),
@@ -195,7 +195,7 @@ export const smartphones = [
         id: 7,
         name: 'Samsung Galaxy Z Fold2 5G',
         img: require('../../assets/images/Products/Smartphone/product7.jpg'),
-        price: '55,000,000đ',
+        price: '55.000.000đ',
         details: {
             desc_heading: 'Samsung Galaxy Z Fold2 5G là chiếc điện thoại sẽ thay đổi tương lai của nhiếp ảnh smartphone. Cùng khám phá bước tiến mang tính lịch sử với 5 ống kính camera 108MP siêu nét, quay phim chuẩn điện ảnh 8K trên S20 Ultra. ',
             desc_heading_img: require('../../assets/images/desc-product/ss1.jpg'),
@@ -227,7 +227,7 @@ export const smartphones = [
         id: 8,
         name: 'Samsung Galaxy Note 10 Lite',
         img: require('../../assets/images/Products/Smartphone/product8.jpg'),
-        price: '11,490,000đ',
+        price: '11.490.000đ',
         details: {
             desc_heading: 'Samsung Galaxy Note 10 Lite là chiếc điện thoại sẽ thay đổi tương lai của nhiếp ảnh smartphone. Cùng khám phá bước tiến mang tính lịch sử với 5 ống kính camera 108MP siêu nét, quay phim chuẩn điện ảnh 8K trên S20 Ultra. ',
             desc_heading_img: require('../../assets/images/desc-product/ss1.jpg'),
@@ -260,7 +260,7 @@ export const smartphones = [
         id: 9,
         name: 'Samsung Galaxy Note 20 Ultra',
         img: require('../../assets/images/Products/Smartphone/product9.jpg'),
-        price: '29,990,000đ',
+        price: '29.990.000đ',
         details: {
             desc_heading: 'Samsung Galaxy Note 20 Ultra là chiếc điện thoại sẽ thay đổi tương lai của nhiếp ảnh smartphone. Cùng khám phá bước tiến mang tính lịch sử với 5 ống kính camera 108MP siêu nét, quay phim chuẩn điện ảnh 8K trên S20 Ultra. ',
             desc_heading_img: require('../../assets/images/desc-product/ss1.jpg'),
@@ -293,7 +293,7 @@ export const smartphones = [
         id: 10,
         name: 'iPhone 11 Pro Max 512GB Chính hãng',
         img: require('../../assets/images/Products/Smartphone/product10.jpg'),
-        price: '37,990,000đ',
+        price: '37.990.000đ',
         details: {
             desc_heading: 'iPhone 11 với 6 phiên bản màu sắc, camera có khả năng chụp ảnh vượt trội, thời lượng pin cực dài và bộ vi xử lý mạnh nhất từ trước đến nay sẽ mang đến trải nghiệm tuyệt vời dành cho bạn. ',
             desc_heading_img: require('../../assets/images/desc-product/ip11-1.jpg'),
@@ -325,7 +325,7 @@ export const smartphones = [
         id: 11,
         name: 'iPhone 11 128GB Chính hãng ',
         img: require('../../assets/images/Products/Smartphone/product11.jpg'),
-        price: '20,990,000đ',
+        price: '20.990.000đ',
         details: {
             desc_heading: 'iPhone 11 với 6 phiên bản màu sắc, camera có khả năng chụp ảnh vượt trội, thời lượng pin cực dài và bộ vi xử lý mạnh nhất từ trước đến nay sẽ mang đến trải nghiệm tuyệt vời dành cho bạn. ',
             desc_heading_img: require('../../assets/images/desc-product/ip11-1.jpg'),
@@ -357,7 +357,7 @@ export const smartphones = [
         id: 12,
         name: 'iPhone 12 256GB Chính Hãng',
         img: require('../../assets/images/Products/Smartphone/product10.jpg'),
-        price: '24,990,000đ',
+        price: '24.990.000đ',
         details: {
             desc_heading: '“Trùm cuối” của dòng iPhone 12 đã xuất hiện. iPhone 12 Pro Max là chiếc iPhone có màn hình lớn nhất từ trước đến nay, mang trên mình bộ vi xử lý mạnh nhất, camera đẳng cấp pro cùng kết nối 5G siêu tốc, cho bạn những trải nghiệm tuyệt vời chưa từng có. ',
             desc_heading_img: require('../../assets/images/desc-product/ip12-1.jpeg'),

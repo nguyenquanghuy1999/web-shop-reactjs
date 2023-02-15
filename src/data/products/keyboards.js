@@ -3,7 +3,7 @@ export const keyboards = [
         id: 1,
         name: 'Bộ bàn phím + chuột Newmen T260',
         img: require('../../assets/images/Products/Keyboard/product1.jpg'),
-        price: '250,000đ',
+        price: '250.000đ',
         details: {
             desc_heading: 'Sở hữu một thiết kế TKL cùng lớp vỏ nhựa đen nhám sang trọng làm cho DareU EK880 nhìn trông như những chiếc bàn phím cơ cao cấp. Kèm theo đó là hệ thống đèn Led RGB tuyệt đẹp chính là điểm khác biệt của DareU EK880 trong tầm giá. Có rất nhiều hiệu ứng chỉnh sáng đẹp mắt dành cho bạn tùy chỉnh.',
             desc_heading_img: require('../../assets/images/desc-product/kb.jpg'),
@@ -25,7 +25,7 @@ export const keyboards = [
         id: 2,
         name: 'Bàn phím Fuhlen L500S',
         img: require('../../assets/images/Products/Keyboard/product2.jpg'),
-        price: '250,000đ',
+        price: '250.000đ',
         details: {
             desc_heading: 'Sở hữu một thiết kế TKL cùng lớp vỏ nhựa đen nhám sang trọng làm cho DareU EK880 nhìn trông như những chiếc bàn phím cơ cao cấp. Kèm theo đó là hệ thống đèn Led RGB tuyệt đẹp chính là điểm khác biệt của DareU EK880 trong tầm giá. Có rất nhiều hiệu ứng chỉnh sáng đẹp mắt dành cho bạn tùy chỉnh.',
             desc_heading_img: require('../../assets/images/desc-product/kb.jpg'),
@@ -47,7 +47,7 @@ export const keyboards = [
         id: 3,
         name: 'Bộ bàn phím và chuột AJAZZ X1080',
         img: require('../../assets/images/Products/Keyboard/product3.jpg'),
-        price: '260,000đ',
+        price: '260.000đ',
         details: {
             desc_heading: 'Sở hữu một thiết kế TKL cùng lớp vỏ nhựa đen nhám sang trọng làm cho DareU EK880 nhìn trông như những chiếc bàn phím cơ cao cấp. Kèm theo đó là hệ thống đèn Led RGB tuyệt đẹp chính là điểm khác biệt của DareU EK880 trong tầm giá. Có rất nhiều hiệu ứng chỉnh sáng đẹp mắt dành cho bạn tùy chỉnh.',
             desc_heading_img: require('../../assets/images/desc-product/kb.jpg'),
@@ -69,7 +69,7 @@ export const keyboards = [
         id: 4,
         name: 'Bàn phím + chuột không dây DareU LK186G',
         img: require('../../assets/images/Products/Keyboard/product4.png'),
-        price: '290,000đ',
+        price: '290.000đ',
         details: {
             desc_heading: 'Sở hữu một thiết kế TKL cùng lớp vỏ nhựa đen nhám sang trọng làm cho DareU EK880 nhìn trông như những chiếc bàn phím cơ cao cấp. Kèm theo đó là hệ thống đèn Led RGB tuyệt đẹp chính là điểm khác biệt của DareU EK880 trong tầm giá. Có rất nhiều hiệu ứng chỉnh sáng đẹp mắt dành cho bạn tùy chỉnh.',
             desc_heading_img: require('../../assets/images/desc-product/kb.jpg'),
@@ -91,7 +91,7 @@ export const keyboards = [
         id: 5,
         name: 'Bàn phím Ajazz DOUYU DKS100 Black',
         img: require('../../assets/images/Products/Keyboard/product5.jpg'),
-        price: '340,000đ',
+        price: '340.000đ',
         details: {
             desc_heading: 'Sở hữu một thiết kế TKL cùng lớp vỏ nhựa đen nhám sang trọng làm cho DareU EK880 nhìn trông như những chiếc bàn phím cơ cao cấp. Kèm theo đó là hệ thống đèn Led RGB tuyệt đẹp chính là điểm khác biệt của DareU EK880 trong tầm giá. Có rất nhiều hiệu ứng chỉnh sáng đẹp mắt dành cho bạn tùy chỉnh.',
             desc_heading_img: require('../../assets/images/desc-product/kb.jpg'),
@@ -113,7 +113,7 @@ export const keyboards = [
         id: 6,
         name: 'Bàn phím Gaming DareU LK145 USB',
         img: require('../../assets/images/Products/Keyboard/product6.jpg'),
-        price: '340,000đ',
+        price: '340.000đ',
         details: {
             desc_heading: 'Sở hữu một thiết kế TKL cùng lớp vỏ nhựa đen nhám sang trọng làm cho DareU EK880 nhìn trông như những chiếc bàn phím cơ cao cấp. Kèm theo đó là hệ thống đèn Led RGB tuyệt đẹp chính là điểm khác biệt của DareU EK880 trong tầm giá. Có rất nhiều hiệu ứng chỉnh sáng đẹp mắt dành cho bạn tùy chỉnh.',
             desc_heading_img: require('../../assets/images/desc-product/kb.jpg'),
@@ -135,7 +135,7 @@ export const keyboards = [
         id: 7,
         name: 'Bàn phím Logitech K270 Wireless',
         img: require('../../assets/images/Products/Keyboard/product7.png'),
-        price: '390,000đ',
+        price: '390.000đ',
         details: {
             desc_heading: 'Sở hữu một thiết kế TKL cùng lớp vỏ nhựa đen nhám sang trọng làm cho DareU EK880 nhìn trông như những chiếc bàn phím cơ cao cấp. Kèm theo đó là hệ thống đèn Led RGB tuyệt đẹp chính là điểm khác biệt của DareU EK880 trong tầm giá. Có rất nhiều hiệu ứng chỉnh sáng đẹp mắt dành cho bạn tùy chỉnh.',
             desc_heading_img: require('../../assets/images/desc-product/kb.jpg'),
@@ -157,7 +157,7 @@ export const keyboards = [
         id: 8,
         name: 'Bàn phím Rapoo V500 Alloy',
         img: require('../../assets/images/Products/Keyboard/product8.jpg'),
-        price: '440,000đ',
+        price: '440.000đ',
         details: {
             desc_heading: 'Sở hữu một thiết kế TKL cùng lớp vỏ nhựa đen nhám sang trọng làm cho DareU EK880 nhìn trông như những chiếc bàn phím cơ cao cấp. Kèm theo đó là hệ thống đèn Led RGB tuyệt đẹp chính là điểm khác biệt của DareU EK880 trong tầm giá. Có rất nhiều hiệu ứng chỉnh sáng đẹp mắt dành cho bạn tùy chỉnh.',
             desc_heading_img: require('../../assets/images/desc-product/kb.jpg'),
@@ -179,7 +179,7 @@ export const keyboards = [
         id: 9,
         name: 'Bàn phím cơ Gaming DAREU EK87 - Black (Multi-LED)',
         img: require('../../assets/images/Products/Keyboard/product9.jpg'),
-        price: '499,000đ',
+        price: '499.000đ',
         details: {
             desc_heading: 'Sở hữu một thiết kế TKL cùng lớp vỏ nhựa đen nhám sang trọng làm cho DareU EK880 nhìn trông như những chiếc bàn phím cơ cao cấp. Kèm theo đó là hệ thống đèn Led RGB tuyệt đẹp chính là điểm khác biệt của DareU EK880 trong tầm giá. Có rất nhiều hiệu ứng chỉnh sáng đẹp mắt dành cho bạn tùy chỉnh.',
             desc_heading_img: require('../../assets/images/desc-product/kb.jpg'),
@@ -201,7 +201,7 @@ export const keyboards = [
         id: 10,
         name: 'Bàn phím Rapoo V500L Rainbow',
         img: require('../../assets/images/Products/Keyboard/product10.jpg'),
-        price: '540,000đ',
+        price: '540.000đ',
         details: {
             desc_heading: 'Sở hữu một thiết kế TKL cùng lớp vỏ nhựa đen nhám sang trọng làm cho DareU EK880 nhìn trông như những chiếc bàn phím cơ cao cấp. Kèm theo đó là hệ thống đèn Led RGB tuyệt đẹp chính là điểm khác biệt của DareU EK880 trong tầm giá. Có rất nhiều hiệu ứng chỉnh sáng đẹp mắt dành cho bạn tùy chỉnh.',
             desc_heading_img: require('../../assets/images/desc-product/kb.jpg'),
@@ -223,7 +223,7 @@ export const keyboards = [
         id: 11,
         name: 'Bàn phím cơ E-Dra EK3087 v2',
         img: require('../../assets/images/Products/Keyboard/product11.jpg'),
-        price: '579,000đ',
+        price: '579.000đ',
         details: {
             desc_heading: 'Sở hữu một thiết kế TKL cùng lớp vỏ nhựa đen nhám sang trọng làm cho DareU EK880 nhìn trông như những chiếc bàn phím cơ cao cấp. Kèm theo đó là hệ thống đèn Led RGB tuyệt đẹp chính là điểm khác biệt của DareU EK880 trong tầm giá. Có rất nhiều hiệu ứng chỉnh sáng đẹp mắt dành cho bạn tùy chỉnh.',
             desc_heading_img: require('../../assets/images/desc-product/kb.jpg'),
@@ -245,7 +245,7 @@ export const keyboards = [
         id: 12,
         name: 'Bàn phím Fuhlen G900L',
         img: require('../../assets/images/Products/Keyboard/product12.jpg'),
-        price: '590,000đ',
+        price: '590.000đ',
         details: {
             desc_heading: 'Sở hữu một thiết kế TKL cùng lớp vỏ nhựa đen nhám sang trọng làm cho DareU EK880 nhìn trông như những chiếc bàn phím cơ cao cấp. Kèm theo đó là hệ thống đèn Led RGB tuyệt đẹp chính là điểm khác biệt của DareU EK880 trong tầm giá. Có rất nhiều hiệu ứng chỉnh sáng đẹp mắt dành cho bạn tùy chỉnh.',
             desc_heading_img: require('../../assets/images/desc-product/kb.jpg'),
@@ -267,7 +267,7 @@ export const keyboards = [
         id: 13,
         name: 'Bàn phím cơ E-Dra EK389 V2',
         img: require('../../assets/images/Products/Keyboard/product13.jpg'),
-        price: '650,000đ',
+        price: '650.000đ',
         details: {
             desc_heading: 'Sở hữu một thiết kế TKL cùng lớp vỏ nhựa đen nhám sang trọng làm cho DareU EK880 nhìn trông như những chiếc bàn phím cơ cao cấp. Kèm theo đó là hệ thống đèn Led RGB tuyệt đẹp chính là điểm khác biệt của DareU EK880 trong tầm giá. Có rất nhiều hiệu ứng chỉnh sáng đẹp mắt dành cho bạn tùy chỉnh.',
             desc_heading_img: require('../../assets/images/desc-product/kb.jpg'),
@@ -289,7 +289,7 @@ export const keyboards = [
         id: 14,
         name: 'Bàn Phím Gaming DAREU EK1280s',
         img: require('../../assets/images/Products/Keyboard/product14.jpg'),
-        price: '650,000đ',
+        price: '650.000đ',
         details: {
             desc_heading: 'Sở hữu một thiết kế TKL cùng lớp vỏ nhựa đen nhám sang trọng làm cho DareU EK880 nhìn trông như những chiếc bàn phím cơ cao cấp. Kèm theo đó là hệ thống đèn Led RGB tuyệt đẹp chính là điểm khác biệt của DareU EK880 trong tầm giá. Có rất nhiều hiệu ứng chỉnh sáng đẹp mắt dành cho bạn tùy chỉnh.',
             desc_heading_img: require('../../assets/images/desc-product/kb.jpg'),
@@ -311,7 +311,7 @@ export const keyboards = [
         id: 15,
         name: 'Bàn phím cơ Newmen GM819',
         img: require('../../assets/images/Products/Keyboard/product15.png'),
-        price: '790,000đ',
+        price: '790.000đ',
         details: {
             desc_heading: 'Sở hữu một thiết kế TKL cùng lớp vỏ nhựa đen nhám sang trọng làm cho DareU EK880 nhìn trông như những chiếc bàn phím cơ cao cấp. Kèm theo đó là hệ thống đèn Led RGB tuyệt đẹp chính là điểm khác biệt của DareU EK880 trong tầm giá. Có rất nhiều hiệu ứng chỉnh sáng đẹp mắt dành cho bạn tùy chỉnh.',
             desc_heading_img: require('../../assets/images/desc-product/kb.jpg'),

@@ -3,7 +3,7 @@ export const mouses = [
         id: 1,
         name: 'Chuột Logitech G Pro Hero',
         img: require('../../assets/images/Products/Mouse/product1.png'),
-        price: '890,000đ',
+        price: '890.000đ',
         details: {
             desc_heading: 'Logitech G Pro Wireless là sản phẩm chuột không dây chơi game được thiết kế tối ưu cho các tựa game Esport. Đây là dòng chuột gaming gear đã được tối ưu về kiểu dáng, trọng lượng, kết hợp với mắt cảm biến Hero và công nghệ không dây Lightspeed để cho ra đời chú chuột với hiệu suất và độ chính xác tuyệt đối.',
             desc_heading_img: require('../../assets/images/desc-product/mouse1.jpg'),
@@ -45,7 +45,7 @@ export const mouses = [
         id: 2,
         name: 'Chuột gaming Logitech G300S',
         img: require('../../assets/images/Products/Mouse/product2.jpg'),
-        price: '399,000đ',
+        price: '399.000đ',
         details: {
             desc_heading: 'Logitech G Pro Wireless là sản phẩm chuột không dây chơi game được thiết kế tối ưu cho các tựa game Esport. Đây là dòng chuột gaming gear đã được tối ưu về kiểu dáng, trọng lượng, kết hợp với mắt cảm biến Hero và công nghệ không dây Lightspeed để cho ra đời chú chuột với hiệu suất và độ chính xác tuyệt đối.',
             desc_heading_img: require('../../assets/images/desc-product/mouse1.jpg'),
@@ -87,7 +87,7 @@ export const mouses = [
         id: 3,
         name: 'Chuột không dây Logitech M331 Silent',
         img: require('../../assets/images/Products/Mouse/product3.png'),
-        price: '330,000đ',
+        price: '330.000đ',
         details: {
             desc_heading: 'Logitech G Pro Wireless là sản phẩm chuột không dây chơi game được thiết kế tối ưu cho các tựa game Esport. Đây là dòng chuột gaming gear đã được tối ưu về kiểu dáng, trọng lượng, kết hợp với mắt cảm biến Hero và công nghệ không dây Lightspeed để cho ra đời chú chuột với hiệu suất và độ chính xác tuyệt đối.',
             desc_heading_img: require('../../assets/images/desc-product/mouse1.jpg'),
@@ -129,7 +129,7 @@ export const mouses = [
         id: 4,
         name: 'Chuột Logitech B100',
         img: require('../../assets/images/Products/Mouse/product4.jpg'),
-        price: '80,000đ',
+        price: '80.000đ',
         details: {
             desc_heading: 'Logitech G Pro Wireless là sản phẩm chuột không dây chơi game được thiết kế tối ưu cho các tựa game Esport. Đây là dòng chuột gaming gear đã được tối ưu về kiểu dáng, trọng lượng, kết hợp với mắt cảm biến Hero và công nghệ không dây Lightspeed để cho ra đời chú chuột với hiệu suất và độ chính xác tuyệt đối.',
             desc_heading_img: require('../../assets/images/desc-product/mouse1.jpg'),
@@ -171,7 +171,7 @@ export const mouses = [
         id: 5,
         name: 'Chuột Logitech G Pro Wireless',
         img: require('../../assets/images/Products/Mouse/product5.png'),
-        price: '2,690,000đ',
+        price: '2.690.000đ',
         details: {
             desc_heading: 'Logitech G Pro Wireless là sản phẩm chuột không dây chơi game được thiết kế tối ưu cho các tựa game Esport. Đây là dòng chuột gaming gear đã được tối ưu về kiểu dáng, trọng lượng, kết hợp với mắt cảm biến Hero và công nghệ không dây Lightspeed để cho ra đời chú chuột với hiệu suất và độ chính xác tuyệt đối.',
             desc_heading_img: require('../../assets/images/desc-product/mouse1.jpg'),
@@ -213,7 +213,7 @@ export const mouses = [
         id: 6,
         name: 'Chuột Logitech G Pro X Superlight Wireless Black',
         img: require('../../assets/images/Products/Mouse/product6.jpg'),
-        price: '2,990,000đ',
+        price: '2.990.000đ',
         details: {
             desc_heading: 'Logitech G Pro Wireless là sản phẩm chuột không dây chơi game được thiết kế tối ưu cho các tựa game Esport. Đây là dòng chuột gaming gear đã được tối ưu về kiểu dáng, trọng lượng, kết hợp với mắt cảm biến Hero và công nghệ không dây Lightspeed để cho ra đời chú chuột với hiệu suất và độ chính xác tuyệt đối.',
             desc_heading_img: require('../../assets/images/desc-product/mouse1.jpg'),
@@ -255,7 +255,7 @@ export const mouses = [
         id: 7,
         name: 'Chuột Logitech G102 Lightsync RGB Black',
         img: require('../../assets/images/Products/Mouse/product7.jpg'),
-        price: '400,000đ',
+        price: '400.000đ',
         details: {
             desc_heading: 'Logitech G Pro Wireless là sản phẩm chuột không dây chơi game được thiết kế tối ưu cho các tựa game Esport. Đây là dòng chuột gaming gear đã được tối ưu về kiểu dáng, trọng lượng, kết hợp với mắt cảm biến Hero và công nghệ không dây Lightspeed để cho ra đời chú chuột với hiệu suất và độ chính xác tuyệt đối.',
             desc_heading_img: require('../../assets/images/desc-product/mouse1.jpg'),
@@ -297,7 +297,7 @@ export const mouses = [
         id: 8,
         name: 'Chuột Logitech G Pro X Superlight Wireless White',
         img: require('../../assets/images/Products/Mouse/product8.jpg'),
-        price: '2,990,000đ',
+        price: '2.990.000đ',
         details: {
             desc_heading: 'Logitech G Pro Wireless là sản phẩm chuột không dây chơi game được thiết kế tối ưu cho các tựa game Esport. Đây là dòng chuột gaming gear đã được tối ưu về kiểu dáng, trọng lượng, kết hợp với mắt cảm biến Hero và công nghệ không dây Lightspeed để cho ra đời chú chuột với hiệu suất và độ chính xác tuyệt đối.',
             desc_heading_img: require('../../assets/images/desc-product/mouse1.jpg'),
@@ -339,7 +339,7 @@ export const mouses = [
         id: 9,
         name: 'Chuột Logitech G302 Daedalus Prime',
         img: require('../../assets/images/Products/Mouse/product9.png'),
-        price: '590,000đ',
+        price: '590.000đ',
         details: {
             desc_heading: 'Logitech G Pro Wireless là sản phẩm chuột không dây chơi game được thiết kế tối ưu cho các tựa game Esport. Đây là dòng chuột gaming gear đã được tối ưu về kiểu dáng, trọng lượng, kết hợp với mắt cảm biến Hero và công nghệ không dây Lightspeed để cho ra đời chú chuột với hiệu suất và độ chính xác tuyệt đối.',
             desc_heading_img: require('../../assets/images/desc-product/mouse1.jpg'),
@@ -381,7 +381,7 @@ export const mouses = [
         id: 10,
         name: 'Chuột Logitech G102 Lightsync RGB White',
         img: require('../../assets/images/Products/Mouse/product10.jpg'),
-        price: '400,000đ',
+        price: '400.000đ',
         details: {
             desc_heading: 'Logitech G Pro Wireless là sản phẩm chuột không dây chơi game được thiết kế tối ưu cho các tựa game Esport. Đây là dòng chuột gaming gear đã được tối ưu về kiểu dáng, trọng lượng, kết hợp với mắt cảm biến Hero và công nghệ không dây Lightspeed để cho ra đời chú chuột với hiệu suất và độ chính xác tuyệt đối.',
             desc_heading_img: require('../../assets/images/desc-product/mouse1.jpg'),
@@ -423,36 +423,36 @@ export const mouses = [
     //     id: 11,
     //     name: 'Chuột Logitech G304 Lightspeed Wireless',
     //     img: require('../../assets/images/Products/Mouse/product11.png'),
-    //     price: '790,000đ'
+    //     price: '790.000đ'
     // },
     // {
     //     id: 12,
     //     name: 'Chuột Logitech G304 Lightspeed Wireless White',
     //     img: require('../../assets/images/Products/Mouse/product12.jpg'),
-    //     price: '790,000đ'
+    //     price: '790.000đ'
     // },
     // {
     //     id: 13,
     //     name: 'Chuột Logitech G402 Hyperion',
     //     img: require('../../assets/images/Products/Mouse/product13.png'),
-    //     price: '640,000đ'
+    //     price: '640.000đ'
     // },
     // {
     //     id: 14,
     //     name: 'Chuột Logitech G403 HERO',
     //     img: require('../../assets/images/Products/Mouse/product14.jpg'),
-    //     price: '990,000đ'
+    //     price: '990.000đ'
     // },
     // {
     //     id: 15,
     //     name: 'Chuột Logitech G502 Hero',
     //     img: require('../../assets/images/Products/Mouse/product15.png'),
-    //     price: '1,090,000đ'
+    //     price: '1.090.000đ'
     // },
     // {
     //     id: 16,
     //     name: 'Chuột Logitech G502 Hero Lightspeed Wireless',
     //     img: require('../../assets/images/Products/Mouse/product16.jpg'),
-    //     price: '2,990,000đ'
+    //     price: '2.990.000đ'
     // },
 ]

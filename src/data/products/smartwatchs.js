@@ -3,7 +3,7 @@ export const smartwatchs = [
         id: 1,
         name: 'Đồng Hồ Thông Minh Apple Watch Nike+ Series 5 GPS',
         img: require('../../assets/images/Products/Smartwatch/product1.jpg'),
-        price: '15,990,000đ',
+        price: '15.990.000đ',
         details: {
             desc_heading: 'Đồng Hồ Thông Minh Apple Watch sở hữu thiết kế sang trọng, đẳng cấp với những cạnh bo tròn mềm mại, tinh tế kết hợp dây đeo chắc chắn, mạnh mẽ giúp tự tin thể hiện đẳng cấp. Không chỉ sở hữu vẻ đẹp tinh tế, nổi bật Apple Watch Series 3 còn gây ấn tượng với những chức năng thông minh, tiện dụng đáp ứng tối đa nhu cầu giải trí, tập luyện, giải quyết công việc của bạn mọi lúc, mọi nơi.',
             desc_heading_img: require('../../assets/images/desc-product/aw1.png'),
@@ -87,7 +87,7 @@ export const smartwatchs = [
         id: 3,
         name: 'Apple Watch SE 40mm (4G) Viền Nhôm - Dây Vải Chính',
         img: require('../../assets/images/Products/Smartwatch/product3.jpg'),
-        price: '9,900,000đ',
+        price: '9.900.000đ',
         details: {
             desc_heading: 'Đồng Hồ Thông Minh Apple Watch sở hữu thiết kế sang trọng, đẳng cấp với những cạnh bo tròn mềm mại, tinh tế kết hợp dây đeo chắc chắn, mạnh mẽ giúp tự tin thể hiện đẳng cấp. Không chỉ sở hữu vẻ đẹp tinh tế, nổi bật Apple Watch Series 3 còn gây ấn tượng với những chức năng thông minh, tiện dụng đáp ứng tối đa nhu cầu giải trí, tập luyện, giải quyết công việc của bạn mọi lúc, mọi nơi.',
             desc_heading_img: require('../../assets/images/desc-product/aw1.png'),
@@ -129,7 +129,7 @@ export const smartwatchs = [
         id: 4,
         name: 'Apple Watch S6 40mm viền nhôm dây cao su ',
         img: require('../../assets/images/Products/Smartwatch/product4.jpg'),
-        price: '15,990,000đ',
+        price: '15.990.000đ',
         details: {
             desc_heading: 'Đồng Hồ Thông Minh Apple Watch sở hữu thiết kế sang trọng, đẳng cấp với những cạnh bo tròn mềm mại, tinh tế kết hợp dây đeo chắc chắn, mạnh mẽ giúp tự tin thể hiện đẳng cấp. Không chỉ sở hữu vẻ đẹp tinh tế, nổi bật Apple Watch Series 3 còn gây ấn tượng với những chức năng thông minh, tiện dụng đáp ứng tối đa nhu cầu giải trí, tập luyện, giải quyết công việc của bạn mọi lúc, mọi nơi.',
             desc_heading_img: require('../../assets/images/desc-product/aw1.png'),
@@ -171,7 +171,7 @@ export const smartwatchs = [
         id: 5,
         name: 'Apple Watch S6 LTE 40mm viền nhôm dây cao su',
         img: require('../../assets/images/Products/Smartwatch/product5.jpg'),
-        price: '15,990,000đ',
+        price: '15.990.000đ',
         details: {
             desc_heading: 'Đồng Hồ Thông Minh Apple Watch sở hữu thiết kế sang trọng, đẳng cấp với những cạnh bo tròn mềm mại, tinh tế kết hợp dây đeo chắc chắn, mạnh mẽ giúp tự tin thể hiện đẳng cấp. Không chỉ sở hữu vẻ đẹp tinh tế, nổi bật Apple Watch Series 3 còn gây ấn tượng với những chức năng thông minh, tiện dụng đáp ứng tối đa nhu cầu giải trí, tập luyện, giải quyết công việc của bạn mọi lúc, mọi nơi.',
             desc_heading_img: require('../../assets/images/desc-product/aw1.png'),

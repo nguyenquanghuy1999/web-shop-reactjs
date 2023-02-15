@@ -3,7 +3,7 @@ export const headphones = [
         id: 1,
         name: 'Tai nghe không dây chống ồn Sony WF-1000XM3',
         img: require('../../assets/images/Products/Headphone/product1.png'),
-        price: '5,490,000đ',
+        price: '5.490.000đ',
         details: {
             desc_heading: 'Thiết kế thời trang và nhỏ gọn, khả năng chống ồn – xử lý âm thanh vượt bậc, tái tạo âm thanh chi tiết, sống động, kết nối không dây Bluetooth tiện lợi',
             desc_heading_img: require('../../assets/images/desc-product/headphone1.jpeg'),
@@ -45,7 +45,7 @@ export const headphones = [
         id: 2,
         name: 'Apple AirPods Pro ',
         img: require('../../assets/images/Products/Headphone/product2.jpg'),
-        price: '7,900,000đ',
+        price: '7.900.000đ',
         details: {
             desc_heading: 'Thiết kế thời trang và nhỏ gọn, khả năng chống ồn – xử lý âm thanh vượt bậc, tái tạo âm thanh chi tiết, sống động, kết nối không dây Bluetooth tiện lợi',
             desc_heading_img: require('../../assets/images/desc-product/headphone1.jpeg'),
@@ -87,7 +87,7 @@ export const headphones = [
         id: 3,
         name: 'Tai nghe Bluetooth Apple AirPods 2',
         img: require('../../assets/images/Products/Headphone/product3.jpg'),
-        price: '3,990,000đ',
+        price: '3.990.000đ',
         details: {
             desc_heading: 'Thiết kế thời trang và nhỏ gọn, khả năng chống ồn – xử lý âm thanh vượt bậc, tái tạo âm thanh chi tiết, sống động, kết nối không dây Bluetooth tiện lợi',
             desc_heading_img: require('../../assets/images/desc-product/headphone1.jpeg'),
@@ -129,7 +129,7 @@ export const headphones = [
         id: 4,
         name: 'Tai nghe Bluetooth Samsung Galaxy Buds Live',
         img: require('../../assets/images/Products/Headphone/product4.jpg'),
-        price: '4,990,000đ',
+        price: '4.990.000đ',
         details: {
             desc_heading: 'Thiết kế thời trang và nhỏ gọn, khả năng chống ồn – xử lý âm thanh vượt bậc, tái tạo âm thanh chi tiết, sống động, kết nối không dây Bluetooth tiện lợi',
             desc_heading_img: require('../../assets/images/desc-product/headphone1.jpeg'),
@@ -171,7 +171,7 @@ export const headphones = [
         id: 5,
         name: 'Tai nghe không dây Huawei Freebuds Pro',
         img: require('../../assets/images/Products/Headphone/product5.jpg'),
-        price: '4,490,000đ',
+        price: '4.490.000đ',
         details: {
             desc_heading: 'Thiết kế thời trang và nhỏ gọn, khả năng chống ồn – xử lý âm thanh vượt bậc, tái tạo âm thanh chi tiết, sống động, kết nối không dây Bluetooth tiện lợi',
             desc_heading_img: require('../../assets/images/desc-product/headphone1.jpeg'),

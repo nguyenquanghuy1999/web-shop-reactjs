@@ -2,7 +2,7 @@ export const laptops = [
     {
         id: 1,
         name: 'Dell XPS 13 9310 i5 1135G7 (8GB-256GB) 13.4',
-        price: '42,990,000đ',
+        price: '42.990.000đ',
         img: require('../../assets/images/Products/Laptop/product1.jpg'),
         details: {
             desc_heading: 'Chiếc laptop 2 trong 1 Dell XPS 13 9310 được chế tác đầy nghệ thuật, mang đến một sản phẩm mạnh mẽ và linh hoạt, cho bạn tự do sáng tạo với khả năng xoay gập cùng màn hình cảm ứng độc đáo.',
@@ -60,7 +60,7 @@ export const laptops = [
         id: 2,
         name: 'Asus ZenBook Duo UX481FL BM048T i5',
         img: require('../../assets/images/Products/Laptop/product2.jpg'),
-        price: '22,900,000đ',
+        price: '22.900.000đ',
         details: {
             desc_heading: 'Asus ZenBook Duo UX481FL BM048T i5 được chế tác đầy nghệ thuật, mang đến một sản phẩm mạnh mẽ và linh hoạt, cho bạn tự do sáng tạo với khả năng xoay gập cùng màn hình cảm ứng độc đáo.',
             desc_heading_img: require('../../assets/images/desc-product/dell-1.jpg'),
@@ -118,7 +118,7 @@ export const laptops = [
         id: 3,
         name: 'MSI Gaming GF63 THIN 10SCXR-1218VN',
         img: require('../../assets/images/Products/Laptop/product3.jpg'),
-        price: '20,990,000đ',
+        price: '20.990.000đ',
         details: {
             desc_heading: 'Laptop MSI Gaming GF63 THIN 10SCXR-1218VN (Core i7-10750H/ 16GB (8GBx2) DDR4 2666MHz/ 1TB SSD M.2 PCIE/ RTX 2060 6GB GDDR6/ 15.6 FHD IPS 144Hz/ Win 10) - Hàng Chính Hãng',
             desc_heading_img: require('../../assets/images/desc-product/msi-1.jpg'),
@@ -146,7 +146,7 @@ export const laptops = [
         name: 'MSI Gaming GL65 LEOPARD 10SCXK-089VN',
         pahtName: 'MSI-Gaming-GL65-LEOPARD-10SCXK-089VN',
         img: require('../../assets/images/Products/Laptop/product4.jpg'),
-        price: '24,990,000đ',
+        price: '24.990.000đ',
         details: {
             desc_heading: 'Laptop MSI Gaming GL65 LEOPARD 10SCXK-089VN (Core i7-10750H/ 16GB (8GBx2) DDR4 2666MHz/ 1TB SSD M.2 PCIE/ RTX 2060 6GB GDDR6/ 15.6 FHD IPS 144Hz/ Win 10) - Hàng Chính Hãng',
             desc_heading_img: require('../../assets/images/desc-product/msi-1.jpg'),
@@ -173,7 +173,7 @@ export const laptops = [
         id: 5,
         name: 'MSI Gaming BRAVO 15 A4DCR-270VN',
         img: require('../../assets/images/Products/Laptop/product5.jpg'),
-        price: '19,490,000đ',
+        price: '19.490.000đ',
         details: {
             desc_heading: 'LaptopMSI Gaming BRAVO 15 A4DCR-270VN (Core i7-10750H/ 16GB (8GBx2) DDR4 2666MHz/ 1TB SSD M.2 PCIE/ RTX 2060 6GB GDDR6/ 15.6 FHD IPS 144Hz/ Win 10) - Hàng Chính Hãng',
             desc_heading_img: require('../../assets/images/desc-product/msi-1.jpg'),
@@ -227,7 +227,7 @@ export const laptops = [
         id: 7,
         name: 'Apple Macbook Pro 2020 - 13 Inchs (i5-8th-8GB-256GB)',
         img: require('../../assets/images/Products/Laptop/product7.jpg'),
-        price: '39,990,000đ',
+        price: '39.990.000đ',
         details: {
             desc_heading: 'Một chiếc laptop tuyệt đẹp, nhỏ gọn, cao cấp, chắc chắn và tinh xảo đến từng đường nét. Đó là những gì mà chúng ta có thể mô tả về thiết kế của Apple Macbook Pro 2020 - 13 Inchs (i5-8th/ 8GB/ 256GB). Bạn sẽ cảm nhận được sự hiện đại, vẻ đẹp của tương lai trên siêu phẩm laptop này. Dù rất nhỏ gọn và vô cùng di động với trọng lượng vỏn vẹn  1,37kg, nhưng MacBook Pro vẫn mang lại sự chắc chắn, cứng cáp và bền bỉ. MacBook Pro 13 là biểu tượng hoàn hảo của sự kết hợp giữa công nghệ và thời trang.',
             desc_heading_img: require('../../assets/images/desc-product/mb-1.jpg'),
@@ -269,7 +269,7 @@ export const laptops = [
         id: 8,
         name: 'Apple Macbook Air 2020 - 13 Inchs (i3-10th-8GB-256GB)',
         img: require('../../assets/images/Products/Laptop/product8.jpg'),
-        price: '28,990,000đ',
+        price: '28.990.000đ',
         details: {
             desc_heading: 'Một chiếc laptop tuyệt đẹp, nhỏ gọn, cao cấp, chắc chắn và tinh xảo đến từng đường nét. Đó là những gì mà chúng ta có thể mô tả về thiết kế của Apple Macbook Pro 2020 - 13 Inchs (i5-8th/ 8GB/ 256GB). Bạn sẽ cảm nhận được sự hiện đại, vẻ đẹp của tương lai trên siêu phẩm laptop này. Dù rất nhỏ gọn và vô cùng di động với trọng lượng vỏn vẹn  1,37kg, nhưng MacBook Pro vẫn mang lại sự chắc chắn, cứng cáp và bền bỉ. MacBook Pro 13 là biểu tượng hoàn hảo của sự kết hợp giữa công nghệ và thời trang.',
             desc_heading_img: require('../../assets/images/desc-product/mb-1.jpg'),
@@ -311,7 +311,7 @@ export const laptops = [
         id: 9,
         name: 'Apple MacBook Pro 2020 M1-8GB-256GB',
         img: require('../../assets/images/Products/Laptop/product9.jpg'),
-        price: '36,990,000đ',
+        price: '36.990.000đ',
         details: {
             desc_heading: 'Một chiếc laptop tuyệt đẹp, nhỏ gọn, cao cấp, chắc chắn và tinh xảo đến từng đường nét. Đó là những gì mà chúng ta có thể mô tả về thiết kế của Apple MacBook Pro 2020 M1-8GB-256GB. Bạn sẽ cảm nhận được sự hiện đại, vẻ đẹp của tương lai trên siêu phẩm laptop này. Dù rất nhỏ gọn và vô cùng di động với trọng lượng vỏn vẹn  1,37kg, nhưng MacBook Pro vẫn mang lại sự chắc chắn, cứng cáp và bền bỉ. MacBook Pro 13 là biểu tượng hoàn hảo của sự kết hợp giữa công nghệ và thời trang.',
             desc_heading_img: require('../../assets/images/desc-product/mb-1.jpg'),

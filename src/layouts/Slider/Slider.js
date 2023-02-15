@@ -10,7 +10,7 @@ const slideItems = [
     require('../../assets/images/slider/slide2.jpg'),
     require('../../assets/images/slider/slide3.png'),
 ]
-
+    
 function Slider() {
 
     const [current, setCurrent] = useState(0);
