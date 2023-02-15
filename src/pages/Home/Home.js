@@ -18,7 +18,6 @@ function Home() {
     useEffect(() => {
         const handleScroll = () => window.scrollY >= 500 ? setIsBtnTop(true) : setIsBtnTop(false);
         window.addEventListener('scroll', handleScroll);
-        console.log('call-back');
         return () => window.removeEventListener('scroll', handleScroll);
     }, [])
 
@@ -28,7 +27,7 @@ function Home() {
         <div className={cx('wrapper')}>
             <div className={cx('category')}>
                 {category.map((item, index) => (
-                    <Link key={index} to={`/category/${item.name}`} state={item.name}>
+                    <Link key={index} to={`/category/${item.category}`} state={item.category}>
                         <div className={cx('category-item')}>
                             <img src={item.image} />
                             <span className={cx('category-title')}>{item.name}</span>
@@ -40,6 +39,7 @@ function Home() {
                 <div className={cx('product-item')}>
                     <Product
                         title='LAPTOP'
+                        category='laptop'
                         data={laptops}
                         bannerSrc={require('../../assets/images/banner/laptop.png')}
                         items={['Laptop Asus', ' Laptop Dell', 'Laptop HP', 'Laptop Lenovo']}
@@ -48,6 +48,7 @@ function Home() {
                 <div className={cx('product-item')}>
                     <Product
                         title='TABLET'
+                        category='tablet'
                         data={tablets}
                         bannerSrc={require('../../assets/images/banner/tablet.png')}
                         items={['iPad Air', 'iPad Mini', 'iPad Pro', ' Samsung Tablet']}
@@ -56,6 +57,7 @@ function Home() {
                 <div className={cx('product-item')}>
                     <Product
                         title='SMARTPHONE'
+                        category='smartphone'
                         data={smartphones}
                         bannerSrc={require('../../assets/images/banner/smartphone.png')}
                         items={['Oppo', 'Samsung', 'Iphone']}
@@ -64,6 +66,7 @@ function Home() {
                 <div className={cx('product-item')}>
                     <Product
                         title='SMARTWATCH'
+                        category='smartwatch'
                         data={smartwatchs}
                         bannerSrc={require('../../assets/images/banner/smartwatch.png')}
                         items={['Tai nghe bluetooth', 'Tai nghe có dây', 'Tai nghe True wireless']}

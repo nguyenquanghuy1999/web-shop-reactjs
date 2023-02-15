@@ -1,16 +1,16 @@
 import classNames from "classnames/bind";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import ProductItem from "../../../components/ProductItem";
 import style from './Product.module.scss';
 
 const cx = classNames.bind(style);
 
-function Product({ data, title, bannerSrc, items = [] }) {
+function Product({ data, title, category, bannerSrc, items = [] }) {
 
     const [imgLarge, setImgLarge] = useState(false);
-    const imgRef = useRef();
-
     const [lessData, setLessData] = useState(data.slice(0, 4))
+    const imgRef = useRef();
 
 
     // handle banner if large than 300 will change the column
@@ -28,7 +28,9 @@ function Product({ data, title, bannerSrc, items = [] }) {
     return (
         <div className='grid'>
             <div className={cx('heading')}>
-                <h3 className={cx('title')}>{title}</h3>
+                <Link to={`category/${category}`} state={category}>
+                    <h3 className={cx('title')}>{title}</h3>
+                </Link>
                 <ul className={cx('list')}>
                     {items.map((item, index) => <li key={index} className={cx('item')}>{item}</li>)}
                 </ul>
@@ -44,6 +46,11 @@ function Product({ data, title, bannerSrc, items = [] }) {
                                 <ProductItem data={item} />
                             </div>
                         ))}
+                    </div>
+                    <div className={cx('see-more')}>
+                        <Link to={`category/${category}`} state={category}>
+                            <div className={cx('see-more-btn')}>Xem tất cả</div>
+                        </Link>
                     </div>
                 </div>
             </div>

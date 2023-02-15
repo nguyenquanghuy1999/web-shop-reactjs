@@ -51,28 +51,30 @@ function Category() {
 
     const [isSortList, setIsSortList] = useState(true);
 
+    // handle when comp mount position always on top    
+    useEffect(() => window.scrollTo({ top: 0 }));
 
     useEffect(() => {
         switch (category) {
-            case 'Laptop':
+            case 'laptop':
                 handleCategItem(laptops);
                 break;
-            case 'Smartphone':
+            case 'smartphone':
                 handleCategItem(smartphones);
                 break;
-            case 'Tablet':
+            case 'tablet':
                 handleCategItem(tablets);
                 break;
-            case 'Smartwatch':
+            case 'smartwatch':
                 handleCategItem(smartwatchs);
                 break;
-            case 'Headphone':
+            case 'headphone':
                 handleCategItem(headphones);
                 break;
-            case 'Computer-Mouse':
+            case 'computer-Mouse':
                 handleCategItem(mouses);
                 break;
-            case 'Keyboard':
+            case 'keyboard':
                 handleCategItem(keyboards);
                 break;
             default:
@@ -199,7 +201,7 @@ function Category() {
                 <ProductItem data={item} />
             </Link>
         </div>
-)
+    )
 
 
     return (

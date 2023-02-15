@@ -17,7 +17,7 @@ function Navbar() {
 
     return (
         <div className={cx('wrapper')}>
-            <div className={cx('inner')}>
+            <div className={cx('inner')}>   
                 <Tippy
                     interactive
                     placement="bottom"
@@ -25,7 +25,7 @@ function Navbar() {
                     render={() => isCateg && (
                         <ul className={cx('category-list')}>
                             {category.map((item, index) => (
-                                <Link to={`/category/${item.category}`} key={index} state={item.name}>
+                                <Link to={`/category/${item.category}`} key={index} state={item.category}>
                                     <li className={cx('category-item')} onClick={() => setIscateg(false)}>
                                         <img className={cx('category-img')} src={item.image} />
                                         <span className={cx('category-name')}>{item.name}</span>
