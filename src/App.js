@@ -1,9 +1,18 @@
-import { Fragment } from 'react';
+import { Fragment, useContext, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LayoutDefault from './layouts/LayoutDefault/LayoutDefault';
 import { routes } from './routes'
+import { StoreContext } from './store';
+import { renderCartList } from './store/state/actions';
 
 function App() {
+
+  const [, dispatch] = useContext(StoreContext)
+
+  useEffect(() => {
+    dispatch(renderCartList())
+  }, [])
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -11,7 +20,7 @@ function App() {
           {routes.map((route, index) => {
 
             let Layout = LayoutDefault;
-            
+
             if (route.layout) {
               Layout = route.layout;
             } else if (route.layout === null) {
@@ -34,8 +43,6 @@ function App() {
           })}
         </Routes>
       </BrowserRouter>
-
-
     </div>
   );
 }

@@ -8,7 +8,7 @@ import style from './Footer.module.scss';
 const cx = classNames.bind(style);
 
 const infos1 = [
-    'Công ty cổ phần thương mại VMart',
+    'Cửa hàng QHStore',
     'Địa chỉ: A12, Đinh Tiên Hoàng, Q. Hoàn Kiếm, Hà Nội ',
     'Điện thoại: 0123456789 ',
     'Email: contact@yourdomain.com'
@@ -36,7 +36,7 @@ function Footer() {
             <div className='grid'>
                 <div className='row'>
                     <div className='col-4'>
-                        <h3 className={cx('title')}>THIÊN ĐƯỜNG MUA SẮM VMART</h3>
+                        <h3 className={cx('title')}>THIÊN ĐƯỜNG MUA SẮM QHSTORE</h3>
                         <div className={cx('infos')}>
                             {infos1.map((item, index) => <span key={index} className={cx('info-item')}>{item}</span>)}
                         </div>
@@ -45,7 +45,7 @@ function Footer() {
                         <h3 className={cx('title')}>CỬA HÀNG</h3>
                         <div className={cx('infos')}>
                             {infos2.map((item, index) => (
-                                <div className={cx('infos2')}>
+                                <div key={index} className={cx('infos2')}>
                                     <span key={index} className={cx('info-icon')}>{item.icon}</span>
                                     <span key={index} className={cx('info-item')}>{item.content}</span>
                                 </div>
@@ -60,7 +60,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className={cx('copyright')}>
-                    <p className={cx('copyright-text')}>© Copyright 2021-2023 Vmart.</p>
+                    <p className={cx('copyright-text')}>© Copyright QHStore.</p>
                 </div>
             </div>
         </div>

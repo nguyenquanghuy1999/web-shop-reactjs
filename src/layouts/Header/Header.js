@@ -22,7 +22,7 @@ function Header() {
         <div className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <Link to={config.home} className={cx('logo-link')}>
-                    <img className={cx('logo')} src="https://vmart.exdomain.net/image/catalog/vmart/logo/StyleHorizontal.png" />
+                    <img className={cx('logo')} src={require('../../assets/images/logo.png')}/>
                 </Link>
                 <Search />
                 <div className={cx('phone-wrap')}>

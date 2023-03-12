@@ -1,16 +1,24 @@
 import classNames from "classnames/bind";
-import style from './Cart.module.scss';
-
-import { CartIcon } from '../../../components/Icons'
+import { useContext, useEffect, useState } from "react";
 import Tippy from "@tippyjs/react/headless";
 import { Link } from "react-router-dom";
+
+import style from './Cart.module.scss';
+import { CartIcon } from '../../../components/Icons'
 import config from "../../../config";
+import { StoreContext } from "../../../store";
+import { removeProduct } from "../../../store/state/actions";
+
 
 const cx = classNames.bind(style);
 
 function Cart() {
 
-    const isCartList = false;
+    const [state, dispatch] = useContext(StoreContext);
+
+    const [isCartList, setIsCartList] = useState(false);
+
+    useEffect(() => state?.cartItems?.length > 0 ? setIsCartList(true) : setIsCartList(false), [state]);
 
     return (
         <Tippy
@@ -22,21 +30,23 @@ function Cart() {
                     {isCartList ?
                         <>
                             <div className={cx('cart-list')}>
-                                <div className={cx('cart-item')}>
-                                    <img className={cx('img')} src="https://vmart.exdomain.net/image/cache/catalog/vmart/san_pham/OPPO-Reno-5-80x80.png" />
-                                    <div className={cx('infos')}>
-                                        <span className={cx('name')}>Điện thoại OPPO Reno5 (8GB|128GB)</span>
-                                        <div className={cx('quantity-and-price')}>
-                                            <span className={cx('quantity')}>Số lượng: 1</span>
-                                            <span className={cx('price')}>17.380.000đ</span>
+                                {state?.cartItems.map((item, index) => (
+                                    <div key={index} className={cx('cart-item')}>
+                                        <img className={cx('img')} src={item?.img} />
+                                        <div className={cx('infos')}>
+                                            <span className={cx('name')}>{item?.name}</span>
+                                            <div className={cx('quantity-and-price')}>
+                                                <span className={cx('quantity')}>{`Số lượng: ${item.quantity}`}</span>
+                                                <span className={cx('price')}>{item?.totalPrice}</span>
+                                            </div>
+                                            <span className={cx('remove')} onClick={() => dispatch(removeProduct(index))}>Xóa</span>
                                         </div>
-                                        <span className={cx('remove')}>Xóa</span>
                                     </div>
-                                </div>
+                                ))}
                             </div>
                             <div className={cx('cart-total-price')}>
                                 <span className={cx('total-price-text')}>Thành tiền</span>
-                                <span className={cx('total-price')}>17.380.000đ</span>
+                                <span className={cx('total-price')}>{state?.totalPrice}</span>
                             </div>
                             <Link to={config.cart}> <button className={cx('view-cart-btn')}>Xem giỏ hàng</button></Link>
                         </>
@@ -53,7 +63,7 @@ function Cart() {
             <Link to={config.cart}>
                 <div className={cx('wrapper')}>
                     <CartIcon />
-                    <span className={cx('total')}>0</span>
+                    <span className={cx('total')}>{state?.cartLength}</span>
                 </div>
             </Link>
         </Tippy>

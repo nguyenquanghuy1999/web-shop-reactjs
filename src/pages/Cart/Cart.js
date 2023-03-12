@@ -1,65 +1,42 @@
 import classNames from "classnames/bind";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { GoReply } from 'react-icons/go'
-import { AiOutlineClose } from 'react-icons/ai'
 import { Link } from "react-router-dom";
 
 import style from './Cart.module.scss';
 import config from "../../config";
+import { StoreContext } from "../../store";
+import CartItem from "./CartItem";
 
 const cx = classNames.bind(style);
 
 function Cart() {
 
-    const [count, setCount] = useState(1);
-    const isHasProduct = true;
+    const [state] = useContext(StoreContext);
+    const [isHasProduct, setIsHasProduct] = useState(state?.cartLength > 0 ? true : false);
+
+    useEffect(() => {
+        if (state?.cartLength > 0) {
+            setIsHasProduct(true)
+        } else {
+            setIsHasProduct(false)
+        }
+    }, [state]);
 
     return (
         <div className={cx('wrapper')}>
             <h2 className={cx('heading')}>Giỏ hàng của bạn</h2>
-            <span className={cx('count')}>{isHasProduct ? `Có ${count} sản phẩm` : 'Không có sản phẩm nào!'}</span>
+            <span className={cx('count')}>{isHasProduct ? `Có ${state?.cartLength} sản phẩm` : 'Không có sản phẩm nào!'}</span>
             {isHasProduct && (
                 <div className={cx('product-and-checkout')}>
                     <div className={cx('product-list')}>
-                        <div className={(cx('product-item'))}>
-                            <img src='https://vmart.exdomain.net/image/cache/catalog/vmart/san_pham/OPPO-Reno-5-80x80.png' />
-                            <div className={cx('product-infos')}>
-                                <span className={cx('name')}>Điện thoại OPPO Reno5 (8GB|128GB)</span>
-                                <span className={cx('price')}>8.690.000đ</span>
-                                <div className={cx('quantity-and-total')}>
-                                    <div className={cx('quantity')}>
-                                        <button className={cx('decrease')} onClick={() => count > 1 && setCount(count - 1)}>–</button>
-                                        <span className={cx('number')}>{count}</span>
-                                        <button className={cx('increase')} onClick={() => setCount(count + 1)}>+</button>
-                                    </div>
-                                    <div className={cx('total-price')}>8.690.000đ</div>
-                                </div>
-                            </div>
-                            <div className={cx('close')}><AiOutlineClose /></div>
-                        </div>
-                        <div className={(cx('product-item'))}>
-                            <img src='https://vmart.exdomain.net/image/cache/catalog/vmart/san_pham/OPPO-Reno-5-80x80.png' />
-                            <div className={cx('product-infos')}>
-                                <span className={cx('name')}>Điện thoại OPPO Reno5 (8GB|128GB)</span>
-                                <span className={cx('price')}>8.690.000đ</span>
-                                <div className={cx('quantity-and-total')}>
-                                    <div className={cx('quantity')}>
-                                        <button className={cx('decrease')} onClick={() => count > 1 && setCount(count - 1)}>–</button>
-                                        <span className={cx('number')}>{count}</span>
-                                        <button className={cx('increase')} onClick={() => setCount(count + 1)}>+</button>
-                                    </div>
-                                    <div className={cx('total-price')}>8.690.000đ</div>
-                                </div>
-                            </div>
-                            <div className={cx('close')}><AiOutlineClose /></div>
-                        </div>
+                        {state?.cartItems?.map((item, index) => <CartItem item={item} index={index} />)}
                     </div>
-
                     <div className={cx('checkout')}>
                         <h3 className={cx('checkout-info')}>Thông tin đơn hàng</h3>
                         <div className={cx('checkout-total')}>
                             <span className={cx('checkout-total-text')}>Tổng tiền:</span>
-                            <span className={cx('checkout-total-price')}>8,690,000đ</span>
+                            <span className={cx('checkout-total-price')}>{state?.totalPrice}</span>
                         </div>
                         <div className={cx('checkout-text')}>
                             Phí vận chuyển sẽ được tính ở trang thanh toán.

@@ -5,17 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import GlobalStyles from './components/GlobalStyles';
 import ModalProvider from './components/ModalProvider';
+import { StoreProvider } from './store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
   <GlobalStyles>
-    <ModalProvider>
-      <App />
-    </ModalProvider>
+    <StoreProvider>
+      <ModalProvider>
+        <App />
+      </ModalProvider>
+    </StoreProvider>
   </GlobalStyles>
-
-
 );
 
 // If you want to start measuring performance in your app, pass a function
